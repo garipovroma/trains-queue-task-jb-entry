@@ -36,7 +36,9 @@ public class SquareTimeSolution implements Solution {
         }
         return ans;
     }
-    public boolean checkTimeIntervals(Train a, Train b) { // a.getArrivingTime() < b.getArrivingTime()
+    public boolean checkTimeIntervals(Train a, Train b) {   // returns true, if time-segments intersection is empty
+        // a.getArrivingTime() < b.getArrivingTime()
+                                                            // a.getArrivingTime() < b.getArrivingTime()
         if (a == null || b == null) {
             return true;
         }

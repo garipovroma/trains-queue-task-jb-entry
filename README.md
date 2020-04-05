@@ -65,7 +65,7 @@
 
 Для запуска тестов реализован ```StressTestRunner```. При запуске нужно указать аргументы в следующем формате :
 
-```java StressTestRunner <checker_solution> <solution_to_stress> <test_сount> <max_count_of_trains>```
+```<checker_solution> <solution_to_stress> <test_сount> <max_count_of_trains>```
 
 ```checker_solution``` - реализация, которая будет высчитывать ответ на тест, это может быть: ```stupid``` - решение за O(n * 2 ^ n), ```square``` - решение за квадратичное время.
 

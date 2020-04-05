@@ -82,7 +82,8 @@ public class FastSolution implements Solution{
         }
         return r;
     }
-    public boolean checkTimeIntervals(Train a, Train b) { // a.getArrivingTime() < b.getArrivingTime()
+    public boolean checkTimeIntervals(Train a, Train b) { // returns true, if time-segments intersection is empty
+                                                          // a.getArrivingTime() < b.getArrivingTime()
         if (a == null || b == null) {
             return true;
         }
