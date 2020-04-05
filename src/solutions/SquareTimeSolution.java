@@ -8,7 +8,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 public class SquareTimeSolution implements Solution {
     @Override
     public long calculateAns(ArrivingTable table) {
-        Train[] trains = table.getSortedByTime();
+        Train[] trains = table.getSortedByTime(); // returns trains in sorted by time order
         int n = trains.length;
         final long INF = (long) 1e18;
         long[][] dp = new long[n][2];

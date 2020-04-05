@@ -12,14 +12,14 @@ public class ArrivingTable {
         readTable();
     }
     public ArrivingTable() {}
-    public void readTable() throws FileNotFoundException {
+    public void readTable() throws FileNotFoundException {  // read table from input
         int n = this.in.nextInt();
         for (int i = 0; i < n; i++) { // format : train number, arriving time, unloading time, payment
             table.add(new Train(this.in.nextInt(), this.in.nextInt(), this.in.nextInt(), this.in.nextInt()));
         }
         in.close();
     }
-    public Train[] getSortedByTime() {
+    public Train[] getSortedByTime() { // sort by time
         ArrayList <Train> mas = new ArrayList<>(table);
         Collections.sort(mas, new SortByTime());
         Train[] res = new Train[mas.size()];

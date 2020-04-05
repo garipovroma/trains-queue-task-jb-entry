@@ -37,7 +37,7 @@ public class FastSolution implements Solution{
     }
     @Override
     public long calculateAns(ArrivingTable table) {
-        Train[] trains = table.getSortedByTime();
+        Train[] trains = table.getSortedByTime(); // returns trains in sorted by time order
         int n = trains.length;
         long[][] dp = new long[n][2];
         for (int i = 0; i < n; i++) {
