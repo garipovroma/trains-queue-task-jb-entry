@@ -35,7 +35,7 @@ public class StressTestRunner {
                     System.out.println("WA " + Integer.toString(test + 1) + ", expected : " + ans + " , found:" + myAns);
                     System.exit(0);
                 } else {
-                    System.out.println("Test #" + Integer.toString(test + 1) + " OK : " + test);
+                    System.out.println("Test #" + Integer.toString(test + 1) + " OK : " + myAns);
                 }
             }
             System.out.println("----------------------");

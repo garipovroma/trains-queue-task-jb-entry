@@ -72,3 +72,50 @@
 ```solution_to_stress``` - реалиазация, которую необходимо протестировать, это может быть : ```square``` или ```fast```.
 
 Для генерации тестов реализован  ```TestGenerator``` который принимает ```max_count_of_trains``` - максимальное количество поездов в генерируемых тестах. Возвращает строку с валидным тестом.
+
+## Запуск тестов и компиляция проекта
+
+Компиляция :
+
+```
+chmod +x compile.sh
+./compile.sh
+```
+
+  Запуск стресс-теста:
+
+```
+chmod +x stress.sh
+./stress.sh <checker_solution> <solution_to_stress> <test_сount> <max_count_of_trains>
+```
+
+ Пример стресс-теста :
+
+``` 
+roma@:~/trains-queue-task-jb-entry$ ./compile.sh 
+roma@:~/trains-queue-task-jb-entry$ ./stress.sh square fast 20 1000
+Test #1 OK : 14483
+Test #2 OK : 13515
+Test #3 OK : 13992
+Test #4 OK : 12160
+Test #5 OK : 17033
+Test #6 OK : 16538
+Test #7 OK : 4951
+Test #8 OK : 11150
+Test #9 OK : 10797
+Test #10 OK : 7430
+Test #11 OK : 866
+Test #12 OK : 12304
+Test #13 OK : 11490
+Test #14 OK : 1698
+Test #15 OK : 12087
+Test #16 OK : 14454
+Test #17 OK : 7905
+Test #18 OK : 9642
+Test #19 OK : 13953
+Test #20 OK : 15281
+----------------------
+Tests passed : 20
+
+```
+
